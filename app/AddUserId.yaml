@@ -1,6 +1,6 @@
 id: ADD_USER_ID  
 info:    
-  name: "IDOR by adding user id in query params"
+  name: "IDOR by adding user id in query params" 
   description: "Attacker can access resources of any user by adding user_id in URL." 
   details: >
     "The endpoint appears to be vulnerable to broken object level authorization attack. The original request was replayed by adding other user's user id in query params.
