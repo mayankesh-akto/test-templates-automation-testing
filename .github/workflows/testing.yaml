@@ -12,7 +12,7 @@ jobs:
 
       - name: csv generation
         id: hello
-        uses: mayankesh-akto/testTemplates-automation-githubAction@v2
+        uses: mayankesh-akto/testTemplates-automation-githubAction@main
         with:
           github-access-token: ${{ secrets.MY_TOKEN }}
           email-recipient: ${{ secrets.EMAIL_RECIPIENT }}
