@@ -1,0 +1,20 @@
+on:
+  push:
+    branches:
+      - main
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: A job to say hello
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: csv generation
+        id: hello
+        uses: actions/testTemplates-automation-githubAction@v2
+        with:
+          github-access-token: ${{ secrets.MY_TOKEN }}
+          email-recipient: ${{ secrets.EMAIL_RECIPIENT }}
+          smtp-username: ${{ secrets.SMTP_USERNAME }}
+          smtp-password: ${{ secrets.SMTP_PASSWORD }}
