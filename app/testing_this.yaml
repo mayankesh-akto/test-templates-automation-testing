@@ -1,5 +1,5 @@
 id: testing_       
-info:    
+info:     
   name: "testing_"    
   description: "Attacker can access resources of any user by adding user_id in URL." 
   details: >  
