@@ -1,5 +1,5 @@
 id: REPLACE_AUTH_TOKEN  
-info:
+info: 
   name: BOLA by changing auth token 
   description: "Attacker can access resources of any user by changing the auth token in request."
   details: >
